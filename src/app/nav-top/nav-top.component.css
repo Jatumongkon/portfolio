@@ -15,3 +15,18 @@
   flex: 6;
   text-align: left;
 }
+
+.top{
+  text-align: center;
+  /* width: 844px; */
+  height: 399px;
+  background-image: url("../../src/assets/Bgdesign.png") ;
+  background-position: center;
+  background-origin: content-box;
+}
+.top>h1 {
+  font-size: 250px;
+  color: #ffffff;
+  border: 0;
+  margin: 0;
+}
