@@ -1,15 +1,31 @@
+.navbar{
+
+  background-color: #1d232c;
+  width: auto;
+  height: 50px;
+  /* border-style: solid;
+  border-width: 2px; */
+  border-bottom: 2px solid white;
+  top: 0;
+  position: sticky;
+
+}
 .navbar ul{
   display: flex;
   list-style: none ;
-  margin: 30px;
+  margin: 0px;
   font-size: 30px;
   font-weight: bold;
 
 
 }
 .navbar ul li{
-  flex: 1;
+  flex: 0.5;
   text-align: center;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #ffffff;
 }
 .navbar ul li:first-child{
   flex: 6;
@@ -30,3 +46,37 @@
   border: 0;
   margin: 0;
 }
+.top h2{
+  margin: auto;
+  text-align: right;
+}
+
+@media screen and  (max-width : 768px){
+  .top>h1{
+
+    font-size: 150px;
+
+  }
+
+}
+
+@media screen and  (max-width : 400px){
+  .top{
+    max-height: 150px;
+  }
+  .top>h1{
+
+    font-size: 50px;
+
+
+  }
+  .top h2{
+    margin: auto;
+    text-align: center;
+  }
+  .navbar ul li{
+    margin: 5px;
+  }
+
+}
+

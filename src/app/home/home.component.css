@@ -1,0 +1,34 @@
+/* src="../../src/assets/profile1.png"  */
+.home{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  display: flex;
+}
+.home div{
+  flex: 1;
+  margin: 10px;
+}
+.profile1{
+  background-image:url("../../src/assets/profile1.png");
+  height: 600px;
+  width: 400px;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and  (max-width : 400px){
+  .home{
+    width: 400px;
+    display:block;
+  }
+  .home>div{
+    height: 250px;
+  }
+  .profile1{
+    background-position: center;
+    background-size: contain;
+  }
+
+}
