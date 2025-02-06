@@ -1,8 +1,10 @@
 .navbar{
 
   background-color: brown;
+
   width: auto;
-  height: 50px;
+  height: auto;
+  /* max-height: 60px; */
   /* border-style: solid;
   border-width: 2px; */
   border-bottom: 2px solid white;
@@ -11,9 +13,14 @@
   /* opacity: 0.7; */
 
 }
-.navbar:hover {
-  opacity: 1.0;
+/* .navbar a{
+  margin: 10px;
+  border: 10px;
 }
+.navbar a:hover {
+
+  background-color: rgb(129, 30, 30);
+} */
 .navbar ul{
   display: flex;
   list-style: none ;
@@ -55,13 +62,24 @@
 .top h2{
   margin: auto;
   text-align: right;
+  margin-right: 50px;
 }
 
 @media screen and  (max-width : 768px){
+  .navbar{
+    height: auto;
+    width: 100%;
+    max-width: 768;
+  }
   .top>h1{
 
     font-size: 150px;
 
+
+  }
+    .navbar ul li a{
+    margin: 5px;
+    font-size: 25px;
   }
 
 }
@@ -69,6 +87,7 @@
 @media screen and  (max-width : 400px){
   .top{
     max-height: 150px;
+    max-width: 400;
   }
   .top>h1{
 
@@ -80,9 +99,16 @@
     margin: auto;
     text-align: center;
   }
-  .navbar ul li{
+  .navbar ul li a{
     margin: 5px;
+    font-size: 20px;
+    text-align: center;
   }
+  .navbar{
+    height: 100px;
+  }
+
+
 
 }
 

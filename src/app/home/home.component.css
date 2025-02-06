@@ -8,32 +8,73 @@
   /* column-gap: 50px; */
 
 }
+.title{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  margin-top: 5px;
+  /* column-gap: 50px; */
+
+}
 .home div{
 
+  /* margin: auto; */
   margin: 10px;
 
 }
 .profile1{
   background-image:url("../../src/assets/profile1.png");
-  height: 600px;
-  width: 400px;
+  height: 300px;
+  width: 250px;
   background-position: center;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 @media screen and  (max-width : 400px){
   .home{
     width: 400px;
     display:block;
   }
-  .home>div{
-    height: 250px;
+  .title{
+    width: 400px;
+    display:block;
+  }
+  .profile1{
+
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% ;
+
 
   }
+  /* .home div{
+    height: 250px;
+
+  } */
   .profile1{
     background-position: center;
     background-size: contain;
+    height: 250px;
+  }
+
+}
+
+@media screen and  (max-width : 768px){
+  .home{
+    width: auto;
+
+  }
+  .title{
+    width: auto;
   }
 
 }
