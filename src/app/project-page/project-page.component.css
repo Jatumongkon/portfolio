@@ -3,7 +3,7 @@ a{
   color: #ffffff;
 }
 .title{
-  width: 1000px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -37,6 +37,13 @@ a{
   background-size: cover;
   border-radius: 25px;
 }
+
+.hololens{
+  @extend .game;
+  background-image:url("../../src/assets/Screenshot.jpg");
+
+}
+
 @media screen and  (max-width : 400px){
   .content{
     width: 400px;
