@@ -10,6 +10,7 @@ import { WorkComponent } from './work/work.component';
 import { SkillComponent } from './skill/skill.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routes';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 
@@ -23,7 +24,9 @@ import { AppRoutes } from './app.routes';
       FooterComponent,
       ProjectPageComponent,
       WorkComponent,
-      SkillComponent
+      SkillComponent,
+      ProjectDetailComponent,
+      ProjectDetailComponent
    ],
     imports:[
       BrowserModule,

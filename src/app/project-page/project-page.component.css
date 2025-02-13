@@ -10,13 +10,15 @@ a{
   border-bottom: 2px solid white;
   border-top: 2px solid white;
   margin-top: 5px;
+
   /* column-gap: 50px; */
 
 }
 .content{
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  width: auto;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr 1fr
   /* column-gap: 50px; */
@@ -39,8 +41,54 @@ a{
 }
 
 .hololens{
-  @extend .game;
+  /* @extend .game; */
   background-image:url("../../src/assets/Screenshot.jpg");
+
+}
+.project1 {
+  /* @extend .game; */
+  background-image:url("../../src/assets/project/project1.png");
+
+}
+.project2 {
+  /* @extend .game; */
+  background-image:url("../../src/assets/project/project2.png");
+
+}
+.project3 {
+  /* @extend .game; */
+  background-image:url("../../src/assets/project/project3.png");
+  background-position: left;
+
+}
+.project4 {
+  /* @extend .game; */
+  background-image:url("../../src/assets/project/project4.png");
+}
+
+.project {
+  opacity: 0.3;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+
+}
+.container  div {
+  /* background-color: #f1f1f1; */
+  /* border: 1px solid black; */
+  padding: 10px;
+  margin: 2px;
+  max-height: 150px;
+  height: 200px;
+  width: 150px;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -62,6 +110,17 @@ a{
     width: 90%;
     height: 200px;
     margin: 10px;
+  }
+
+  .container {
+    /* display: grid; */
+    grid-template-columns: auto auto;
+
+
+  }
+  .container  div {
+    height: 150px;
+    width: 125px;
   }
 }
 @media screen and  (max-width : 768px){
