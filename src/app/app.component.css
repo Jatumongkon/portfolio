@@ -1,0 +1,72 @@
+.navbar{
+
+  background-color: brown;
+  overflow: hidden;
+  /* width: auto;
+  height: auto; */
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+
+  border-bottom: 2px solid white;
+  opacity: 0.9;
+  z-index: 1;
+
+}
+/* .animation{
+  animation-duration: 4s;
+  animation-name: example;
+} */
+@keyframes example {
+  100% {background-color:rgb(129, 23, 23); left:20px; top:0px;}
+}
+/* .navbar a{
+  margin: 10px;
+  border: 10px;
+}
+.navbar a:hover {
+
+  background-color: rgb(129, 30, 30);
+} */
+.navbar ul{
+  display: flex;
+  list-style: none ;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: bold;
+
+  /* position: sticky; */
+
+
+}
+li {
+  float: left;
+
+}
+
+.navbar ul li:first-child{
+  margin-right: 75%;
+}
+
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  color: white;
+  /* text-align: center; */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li:hover{
+  background-color: rgb(122, 25, 25);
+  /* animation-duration: 1s;
+  animation-name: example; */
+}
+@media screen and  (max-width : 768px){
+  .navbar ul li:first-child{
+    margin-right: 0%;
+  }
+
+}

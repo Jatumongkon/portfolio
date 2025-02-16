@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 
@@ -9,5 +9,12 @@ import { RouterOutlet } from '@angular/router';
   standalone: false
 })
 export class AppComponent {
+
   title = 'portfolio';
+
+  OnInit(){
+
+
+  }
+
 }

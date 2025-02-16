@@ -11,6 +11,8 @@ import { SkillComponent } from './skill/skill.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routes';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ServiceService } from './service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -26,13 +28,17 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
       WorkComponent,
       SkillComponent,
       ProjectDetailComponent,
-      ProjectDetailComponent
+      ProjectDetailComponent,
+
    ],
     imports:[
       BrowserModule,
       CommonModule,
       RouterModule,
-      AppRoutes
+      AppRoutes,
+      HttpClientModule
+
+
 
 
 

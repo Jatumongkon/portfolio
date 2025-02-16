@@ -1,4 +1,6 @@
+import { ServiceService } from './../service.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -8,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  data: any[] = [];
+  constructor(private serviceService: ServiceService) {}
 
 
-  ngOnInit() {
+   ngOnInit() {
+    this.serviceService.getAboutInfo().subscribe(
+     (response) => {
+       this.data = response;
+       console.log(response);
+
+
+     },
+     (error) => {
+       console.error('Error fetching data:', error);
+     }
+    );
+    // this.serviceService.getHello()
+
   }
+
 
 }
