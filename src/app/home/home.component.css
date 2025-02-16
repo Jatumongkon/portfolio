@@ -1,4 +1,16 @@
 /* src="../../src/assets/profile1.png"  */
+.opacity {
+  animation: opacity 5s ;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home{
   margin-left: auto;
   margin-right: auto;

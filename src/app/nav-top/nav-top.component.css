@@ -3,10 +3,13 @@
 .top{
   text-align: center;
   /* width: 844px; */
-  height: 399px;
+  /* height: 399px; */
   background-image: url("../../src/assets/Bgdesign.png") ;
+  background-attachment: fixed;
   background-position: center;
-  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
 }
 
 
@@ -28,11 +31,17 @@
   margin-right: 50px;
 }
 
+
+
 @media screen and  (max-width : 768px){
 
+  .top{
+    min-height: 250px;
+  }
   .top>h1{
 
     font-size: 150px;
+
 
 
   }
@@ -42,8 +51,8 @@
 
 @media screen and  (max-width : 400px){
   .top{
-    max-height: 150px;
-    max-width: 400;
+    min-height: 50px;
+    /* max-width: 400; */
   }
   .top>h1{
 
