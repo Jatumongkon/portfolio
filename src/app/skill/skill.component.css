@@ -21,14 +21,50 @@ a{
   grid-template-columns: 1fr 1fr
   /* column-gap: 50px; */
 
+
 }
 .content div{
 
-  margin: 10px;
+
 
 }
 
+.picture{
 
+  height: 300px;
+  width: 400px;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.37);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px
+
+}
+
+.certificate1{
+  @extend .picture;
+  background-image:url("../../src/assets/certificate/picture1.png");
+}
+.certificate2{
+  @extend .picture;
+  background-image:url("../../src/assets/certificate/picture2.png");
+}
+.certificate3{
+  @extend .picture;
+  background-image:url("../../src/assets/certificate/picture3.png");
+}
+.certificate4{
+  @extend .picture;
+  background-image:url("../../src/assets/certificate/picture4.png");
+}
+.certificate5{
+  @extend .picture;
+  background-image:url("../../src/assets/certificate/picture5.png");
+}
 
 
 @media screen and  (max-width : 400px){
@@ -51,6 +87,11 @@ a{
   .title{
     width: auto;
   }
+  .picture{
+    height: 200px;
+    width: 250px;
+
+  }
 
 }
 @keyframes appear {
@@ -69,3 +110,5 @@ a{
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
+
+
