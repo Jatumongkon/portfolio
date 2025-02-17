@@ -1,15 +1,15 @@
 <section>
-  <div class="title">
+  <div class="title scroll">
     <h2>My project</h2>
   </div>
-  <div class="content">
+  <div class="content scroll">
     <ul>
       <li>Lathe Machine MRTK( Practical training project) :<a href="https://drive.google.com/file/d/1ZjV_oLcDuys9HzaOMJQ0KFdqO6dXaZSG/view?usp=sharing"> link</a> </li>
       <li>Computer engineering project : <a href="https://drive.google.com/file/d/1zidmqs2noQE1RvpbptkdRagEAyhOn8Km/view"> link</a></li>
       <li>Project OOP (java) : <a href="https://github.com/Jatumongkon/firstPokemon"> link</a></li>
       <li>HTML CSS project : <a href="https://github.com/Jatumongkon/HTML-CSS">link</a></li>
     </ul>
-    <div class="game hololens">
+    <div class="game hololens scroll">
 
     </div>
     </div>
@@ -17,29 +17,29 @@
 </section>
 
 <section>
-  <div class="title">
+  <div class="title scroll">
     <h2>My game project</h2>
   </div>
-  <div class="content">
+  <div class="content scroll">
     <ul>
       <li>Roguelike Top-Down Project :<a href="https://tajatuingamedev.itch.io/subprocess"> link</a> </li>
       <li>Top-down Shooting Project : <a href="https://tajatuingamedev.itch.io/over-iron-in-sky"> link</a></li>
 
     </ul>
-    <div class="game"></div>
+    <div class="game scroll"></div>
     </div>
 
 </section>
 
 <section>
-  <div class="title"><h2>Other</h2></div>
-  <div class="content">
-    <div class="container">
+  <div class="title scroll"><h2>Other</h2></div>
+  <div class="content scroll">
+    <div class="container scroll">
       <div *ngFor="let item of items" class="project  {{item.class}} " (click)="onclickFunction(item.id)" style="opacity: {{item.id == index ? 1 :0.2}} ;">
           <!-- {{item.id}} -->
       </div>
     </div>
-    <div class="content_detail">
+    <div class="content_detail scroll">
       <div class="detail {{_class}} " style="margin-left: auto; margin-right: auto;"></div>
       <app-project-detail [index]="index"></app-project-detail>
     </div>
