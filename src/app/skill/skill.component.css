@@ -45,7 +45,12 @@ a{
   /* margin: 0 auto; */
 
 }
+.content-listcer{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-inline-start: 0px;
 
+}
 .certificate1{
   @extend .picture;
   background-image:url("../../src/assets/certificate/picture1.png");
@@ -78,6 +83,10 @@ a{
     display:block;
 
   }
+  .content-listcer{
+    display: block;
+  }
+
 
 }
 @media screen and  (max-width : 768px){

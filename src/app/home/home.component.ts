@@ -15,17 +15,17 @@ export class HomeComponent implements OnInit {
 
 
    ngOnInit() {
-    this.serviceService.getAboutInfo().subscribe(
-     (response) => {
-       this.data = response;
-       console.log(response);
+    // this.serviceService.getAboutInfo().subscribe(
+    //  (response) => {
+    //    this.data = response;
+    //    console.log(response);
 
 
-     },
-     (error) => {
-       console.error('Error fetching data:', error);
-     }
-    );
+    //  },
+    //  (error) => {
+    //    console.error('Error fetching data:', error);
+    //  }
+    // );
     // this.serviceService.getHello()
 
   }
